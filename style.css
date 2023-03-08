@@ -1,0 +1,18 @@
+* {
+    font-family: Arial, Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#top-half {
+    margin: 0;
+    padding: 0;
+    height: 800px;
+    background-color: #355ab0;
+    text-align: center;
+}
+
+#title-text {
+    padding: 1em;
+    color: white;
+}
