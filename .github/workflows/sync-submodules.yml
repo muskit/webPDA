@@ -25,7 +25,6 @@ jobs:
     # Update references
     - name: Git Sumbodule Update
       run: |
-        git submodule update --init
         git submodule update --remote --recursive
 
     - name: Commit update
