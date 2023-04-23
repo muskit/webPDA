@@ -23,9 +23,7 @@ jobs:
         submodules: true
         
     - name: Checkout submodules
-      uses: srt32/git-actions@v0.0.3
-      with:
-        args: git submodule update --init --recursive
+      run: git submodule update --init --recursive
 
     - name: Commit update
       run: |
