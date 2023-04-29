@@ -15,15 +15,13 @@ jobs:
         shell: bash
 
     steps:
-    # Checkout the repository to the GitHub Actions runner
-    - name: Checkout
+    - name: Checkout repository
       uses: actions/checkout@v2
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        submodules: true
-        
+      
     - name: Checkout submodules
-      run: git submodule update --init --recursive
+      uses: srt32/git-actions@v0.0.3
+      with:
+        args: git submodule update --init --recursive
 
     - name: Commit update
       run: |
