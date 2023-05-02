@@ -43,3 +43,9 @@ body {
     background-color: var(--color-main);
     text-align: center;
 }
+
+img{
+    max-width: 80%;
+    margin-top: 1.5em;
+    filter: drop-shadow(0px 0px 12px #000000);
+}
